@@ -4,7 +4,7 @@ from azure.data.tables import TableServiceClient, TableClient
 class TableStorageOperations:
 
     def __init__(self):
-        connection_string = "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=teststorageacct99;AccountKey=Gpo57uV0XvK0Fq7AjOUwFEJLZf5RjDW4U9olYvXPFIkrvJvIhPGIlXCT4OgDd+mSH+6C7YU1R45V+AStT0lRFQ==;BlobEndpoint=https://teststorageacct99.blob.core.windows.net/;FileEndpoint=https://teststorageacct99.file.core.windows.net/;QueueEndpoint=https://teststorageacct99.queue.core.windows.net/;TableEndpoint=https://teststorageacct99.table.core.windows.net/"
+        connection_string = "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=teststorageacct99;AccountKey=<your-access-key-here>;BlobEndpoint=https://teststorageacct99.blob.core.windows.net/;FileEndpoint=https://teststorageacct99.file.core.windows.net/;QueueEndpoint=https://teststorageacct99.queue.core.windows.net/;TableEndpoint=https://teststorageacct99.table.core.windows.net/"
         self.table_service_client = TableServiceClient.from_connection_string(conn_str=connection_string)
         # self.table_client = self.table_service_client.get_table_client(table_name="employeetable99")
         self.table_client = TableClient.from_connection_string(conn_str=connection_string, table_name="employeetable99")
