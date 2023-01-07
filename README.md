@@ -1,5 +1,6 @@
 # azurerm-data-lake
-this repository has jump start codes to access azure data lake using python
+
+- this repository has jump start codes to access storage accounts using python, which is a fundamental for learning data lake
 
 - azure storage account has below 4 storages
   
